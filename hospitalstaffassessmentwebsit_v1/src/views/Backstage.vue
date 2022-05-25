@@ -382,7 +382,7 @@
             <div class="text">1分</div>
           </div>
         </div>
-        <pie-chart :score="score"> </pie-chart>
+        <pie-chart :score="placeSearchResult[employee]['score']"> </pie-chart>
       </div>
     </div>
   </div>
@@ -820,11 +820,12 @@ export default {
           .then((res) => {
             if (dateFlag == 0) {
               placeSearchResult.value = res.data
-              const paramsData = res.data
-              detectEmployeeSelect(paramsData)
+              // const paramsData = res.data
+              // detectEmployeeSelect(paramsData)
               console.log(placeSearchResult.value)
               console.log(department.value + '部門' + place.value + '地點查詢')
             } else if (dateFlag == 2) {
+              console.log(res.data);
               placeSearchResult2.value = res.data
               const paramsData = res.data
               detectEmployeeSelect(paramsData)
