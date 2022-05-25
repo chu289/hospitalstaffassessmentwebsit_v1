@@ -61,12 +61,11 @@ export default defineComponent({
               normal: {
                 color: function (colors) {
                   const colorList = [
-                    '#B5EAEA',
-                    '#FFAAA7',
-                    '#91cd77',
-                    '#64D0DA',
-                    '#F6DC66',
                     '#BAFFB4',
+                    '#F6DC66',
+                    '#64D0DA',
+                    '#FFAAA7',
+                    '#B5EAEA',
                   ]
                   return colorList[colors.dataIndex]
                 },

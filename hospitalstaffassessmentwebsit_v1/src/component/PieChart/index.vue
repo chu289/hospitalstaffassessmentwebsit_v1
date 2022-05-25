@@ -1,5 +1,5 @@
 <template>
- <!-- <div class="legend-box">
+  <!-- <div class="legend-box">
     <div class="legend1">
       <div class="text">5分</div>
       <div class="box"></div>
@@ -55,7 +55,7 @@ export default defineComponent({
   },
   props: ['score'],
   setup(props) {
-    const option = ref({});
+    const option = ref({})
     // const score = ref([335, 310, 234, 135, 1548])
     // const option = ref({
     //   title: {
@@ -126,78 +126,77 @@ export default defineComponent({
 
     function reAssign() {
       option.value = {
-      title: {
-        // text: "Traffic Sources",
-        left: 'center',
-      },
-      tooltip: {
-        trigger: 'item',
-        formatter: '{b}分 : {c}次 ({d}%)',
-      },
-      // legend: {
-      //   orient: 'vertical',
-      //   left: 'left',
-      //   // data: ["5", "4", "3", "2", "1"]
-      //   data: [
-      //     score.value[0],
-      //     score.value[1],
-      //     score.value[2],
-      //     score.value[3],
-      //     score.value[4],
-      //   ],
-      // },
-      series: [
-        {
-          // name: 'Traffic Sources',
-          type: 'pie',
-          radius: '55%',
-          center: ['50%', '60%'],
-          data: [
-            // { value: 335, name: "5" },
-            // { value: 310, name: "4" },
-            // { value: 234, name: "3" },
-            // { value: 135, name: "2" },
-            // { value: 1548, name: "1" }
-            { value: props.score[0], name: "1" },
-            { value: props.score[1], name: "2" },
-            { value: props.score[2], name: "3" },
-            { value: props.score[3], name: "4" },
-            { value: props.score[4], name: "5" },
-          ],
+        title: {
+          // text: "Traffic Sources",
+          left: 'center',
+        },
+        tooltip: {
+          trigger: 'item',
+          formatter: '{b}分 : {c}次 ({d}%)',
+        },
+        // legend: {
+        //   orient: 'vertical',
+        //   left: 'left',
+        //   // data: ["5", "4", "3", "2", "1"]
+        //   data: [
+        //     score.value[0],
+        //     score.value[1],
+        //     score.value[2],
+        //     score.value[3],
+        //     score.value[4],
+        //   ],
+        // },
+        series: [
+          {
+            // name: 'Traffic Sources',
+            type: 'pie',
+            radius: '55%',
+            center: ['50%', '60%'],
+            data: [
+              // { value: 335, name: "5" },
+              // { value: 310, name: "4" },
+              // { value: 234, name: "3" },
+              // { value: 135, name: "2" },
+              // { value: 1548, name: "1" }
+              { value: props.score[0], name: '1' },
+              { value: props.score[1], name: '2' },
+              { value: props.score[2], name: '3' },
+              { value: props.score[3], name: '4' },
+              { value: props.score[4], name: '5' },
+            ],
 
-          itemStyle: {
-            normal: {
-              color: function (colors) {
-                const colorList = [
-                  '#B5EAEA',
-                  '#FFAAA7',
-                  '#91cd77',
-                  '#64D0DA',
-                  '#F6DC66',
-                  '#BAFFB4',
-                ]
-                return colorList[colors.dataIndex]
+            itemStyle: {
+              normal: {
+                color: function (colors) {
+                  const colorList = [
+                    '#BAFFB4',
+                    '#F6DC66',
+                    '#64D0DA',
+                    '#FFAAA7',
+                    '#B5EAEA',
+                  ]
+                  return colorList[colors.dataIndex]
+                },
+              },
+            },
+
+            emphasis: {
+              itemStyle: {
+                shadowBlur: 10,
+                shadowOffsetX: 0,
+                shadowColor: 'rgba(0, 0, 0, 0.5)',
               },
             },
           },
-
-          emphasis: {
-            itemStyle: {
-              shadowBlur: 10,
-              shadowOffsetX: 0,
-              shadowColor: 'rgba(0, 0, 0, 0.5)',
-            },
-          },
-        },
-      ],
-    }
+        ],
+      }
     }
 
     reAssign()
 
     watch(props, () => {
-      reAssign();
-    });
+      reAssign()
+    })
 
     return { option }
   },
