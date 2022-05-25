@@ -201,7 +201,7 @@ export default {
         router.replace({ path: '/' });
     }
       // qrcodePath.value = require(`@/assets/${userID.value}.png`)
-      qrcodePath.value = require(`@/assets/${this.$route.params.userID}.png`)
+      qrcodePath.value = require(`@/assets/qr_code/${this.$route.params.userID}.png`)
 
       // router.push({ path: '/users/' + userID.value })
       console.log(qrcodePath.value);
