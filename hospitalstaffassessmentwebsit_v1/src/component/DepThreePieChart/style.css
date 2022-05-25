@@ -1,6 +1,6 @@
 .total-pie{
-    height: 450px;
-    width: 500px;
+    /* height: 450px;
+    width: 500px; */
     display: flex;
     justify-content: center;
     position: relative;
@@ -20,13 +20,16 @@ x-vue-echarts.echarts.piechart11,
 x-vue-echarts.echarts.piechart12,
 x-vue-echarts.echarts.piechart13,
 x-vue-echarts.echarts.piechart14{
-    width: 400px;
-    height: 400px;
-    display: flex;
+    /* width: 400px;
+    height: 400px; */
+    width: 500px;
+    height: 500px;
+    /* display: flex; */
     /* justify-content: center; */
     /* align-items: center; */
     /* margin: auto 60px; */
-    margin-top: 50px;
+    /* margin-top: 50px; */
+    margin: 50px 0;
 }
 .total-pie-text{
     position: absolute;

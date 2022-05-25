@@ -127,7 +127,7 @@ export default defineComponent({
           {
             name: '本館B1放射科櫃台',
             type: 'pie',
-            radius: '80%',
+            radius: '75%',
             center: ['50%', '60%'],
             data: [
               { value: props.score1[0], name: '1' },
@@ -172,7 +172,7 @@ export default defineComponent({
           {
             name: '本館B1_CT檢查室',
             type: 'pie',
-            radius: '80%',
+            radius: '75%',
             center: ['50%', '60%'],
             data: [
               { value: props.score2[0], name: '1' },
@@ -217,7 +217,7 @@ export default defineComponent({
           {
             name: '本館B1_MRI放射科櫃台',
             type: 'pie',
-            radius: '80%',
+            radius: '75%',
             center: ['50%', '60%'],
             data: [
               { value: props.score3[0], name: '1' },
@@ -262,7 +262,7 @@ export default defineComponent({
           {
             name: '二分館1F_640檢查室',
             type: 'pie',
-            radius: '80%',
+            radius: '75%',
             center: ['50%', '60%'],
             data: [
               { value: props.score4[0], name: '1' },
@@ -307,7 +307,7 @@ export default defineComponent({
           {
             name: '二分館B1_檢查室',
             type: 'pie',
-            radius: '80%',
+            radius: '75%',
             center: ['50%', '60%'],
             data: [
               { value: props.score5[0], name: '1' },
@@ -352,7 +352,7 @@ export default defineComponent({
           {
             name: '二分館5F_)檢查室',
             type: 'pie',
-            radius: '80%',
+            radius: '75%',
             center: ['50%', '60%'],
             data: [
               { value: props.score6[0], name: '1' },
@@ -397,7 +397,7 @@ export default defineComponent({
           {
             name: '二分館1F_內視鏡檢查室',
             type: 'pie',
-            radius: '80%',
+            radius: '75%',
             center: ['50%', '60%'],
             data: [
               { value: props.score7[0], name: '1' },
@@ -442,7 +442,7 @@ export default defineComponent({
           {
             name: '本館1F_內視鏡檢查室',
             type: 'pie',
-            radius: '80%',
+            radius: '75%',
             center: ['50%', '60%'],
             data: [
               { value: props.score8[0], name: '1' },
@@ -487,7 +487,7 @@ export default defineComponent({
           {
             name: '本館3F_婦產科檢查室',
             type: 'pie',
-            radius: '80%',
+            radius: '75%',
             center: ['50%', '60%'],
             data: [
               { value: props.score9[0], name: '1' },
@@ -532,7 +532,7 @@ export default defineComponent({
           {
             name: '本館3F_耳鼻喉科檢查室',
             type: 'pie',
-            radius: '80%',
+            radius: '75%',
             center: ['50%', '60%'],
             data: [
               { value: props.score10[0], name: '1' },
@@ -577,7 +577,7 @@ export default defineComponent({
           {
             name: '二分館B1眼科檢查室',
             type: 'pie',
-            radius: '80%',
+            radius: '75%',
             center: ['50%', '60%'],
             data: [
               { value: props.score11[0], name: '1' },
@@ -622,7 +622,7 @@ export default defineComponent({
           {
             name: '本館3F肌電圖室',
             type: 'pie',
-            radius: '80%',
+            radius: '75%',
             center: ['50%', '60%'],
             data: [
               { value: props.score12[0], name: '1' },
@@ -667,7 +667,7 @@ export default defineComponent({
           {
             name: '本館B1心臟超音波檢查室',
             type: 'pie',
-            radius: '80%',
+            radius: '75%',
             center: ['50%', '60%'],
             data: [
               { value: props.score13[0], name: '1' },
@@ -712,7 +712,7 @@ export default defineComponent({
           {
             name: '本館B1核子醫學科檢查室',
             type: 'pie',
-            radius: '80%',
+            radius: '75%',
             center: ['50%', '60%'],
             data: [
               { value: props.score14[0], name: '1' },
@@ -774,39 +774,4 @@ export default defineComponent({
   },
 })
 </script>
-<style>
-.total-pie {
-  height: 450px;
-  width: 500px;
-  display: flex;
-  justify-content: center;
-  position: relative;
-}
-
-x-vue-echarts.echarts.piechart1,
-x-vue-echarts.echarts.piechart2,
-x-vue-echarts.echarts.piechart3,
-x-vue-echarts.echarts.piechart4,
-x-vue-echarts.echarts.piechart5,
-x-vue-echarts.echarts.piechart6,
-x-vue-echarts.echarts.piechart7,
-x-vue-echarts.echarts.piechart8,
-x-vue-echarts.echarts.piechart9,
-x-vue-echarts.echarts.piechart10,
-x-vue-echarts.echarts.piechart11,
-x-vue-echarts.echarts.piechart12,
-x-vue-echarts.echarts.piechart13,
-x-vue-echarts.echarts.piechart14 {
-  width: 400px;
-  height: 400px;
-  display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* margin: auto 60px; */
-  margin-top: 50px;
-}
-.total-pie-text {
-  position: absolute;
-  top: 15%;
-}
-</style>
+<style src="./style.css"></style>

@@ -62,7 +62,7 @@ export default defineComponent({
           {
             name: '行政部門',
             type: 'pie',
-            radius: '80%',
+            radius: '75%',
             center: ['50%', '60%'],
             data: [
               { value: props.score1[0], name: '1' },
@@ -112,7 +112,7 @@ export default defineComponent({
           {
             name: '檢驗部門',
             type: 'pie',
-            radius: '80%',
+            radius: '75%',
             center: ['50%', '60%'],
             data: [
               { value: props.score2[0], name: '1' },
@@ -162,7 +162,7 @@ export default defineComponent({
           {
             name: '檢查部門',
             type: 'pie',
-            radius: '80%',
+            radius: '75%',
             center: ['50%', '60%'],
             data: [
               { value: props.score3[0], name: '1' },
@@ -212,7 +212,7 @@ export default defineComponent({
           {
             name: '藥劑部門',
             type: 'pie',
-            radius: '80%',
+            radius: '75%',
             center: ['50%', '60%'],
             data: [
               { value: props.score4[0], name: '1' },

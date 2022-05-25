@@ -1,27 +1,8 @@
 <template>
-  <!-- <div class="legend-box">
-    <div class="legend1">
-      <div class="text">5分</div>
-      <div class="box"></div>
-    </div>
-    <div class="legend legend2">
-      <div class="text">4分</div>
-      <div class="box"></div>
-    </div>
-    <div class="legend legend3">
-      <div class="text">3分</div>
-      <div class="box"></div>
-    </div>
-    <div class="legend legend4">
-      <div class="text">2分</div>
-      <div class="box"></div>
-    </div>
-    <div class="legend legend5">
-      <div class="text">1分</div>
-      <div class="box"></div>
-    </div>
-  </div> -->
-  <v-chart :option="option" @click="clickBar" />
+  <div class="total-pie">
+    <v-chart class="piechart1" :option="option" @click="clickBar" />
+  </div>
+  
 </template>
 
 <script>
@@ -204,35 +185,3 @@ export default defineComponent({
 </script>
 
 <style src="./style.css"></style>
-<style scoped>
-/* .chart {
-  height: 100vh;
-} */
-/* .legend-box{
-  width: 60px;
-  height: 30px;
-  display: flex;
-    margin: 0 auto;
-}
-.legend{
-  width: 70px;
-  height: 10px;
-  margin-left: 5px;
-  margin-top: 5px;
-}
-.legend1{
-  background: #B5EAEA;
-}
-.legend2{
-  background: #FFAAA7;
-}
-.legend3{
-  background: #64D0DA;
-}
-.legend4{
-  background: #F6DC66;
-}
-.legend5{
-  background: #BAFFB4;
-} */
-</style>

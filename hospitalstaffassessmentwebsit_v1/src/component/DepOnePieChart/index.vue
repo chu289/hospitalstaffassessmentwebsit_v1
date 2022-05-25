@@ -68,7 +68,7 @@ export default defineComponent({
           {
             name: '本館1F門診櫃台',
             type: 'pie',
-            radius: '80%',
+            radius: '75%',
             center: ['50%', '60%'],
             data: [
               { value: props.score1[0], name: '1' },
@@ -113,7 +113,7 @@ export default defineComponent({
           {
             name: '本館1F住院櫃台',
             type: 'pie',
-            radius: '80%',
+            radius: '75%',
             center: ['50%', '60%'],
             data: [
               { value: props.score2[0], name: '1' },
@@ -158,7 +158,7 @@ export default defineComponent({
           {
             name: '本館1F急診櫃台',
             type: 'pie',
-            radius: '80%',
+            radius: '75%',
             center: ['50%', '60%'],
             data: [
               { value: props.score3[0], name: '1' },
@@ -203,7 +203,7 @@ export default defineComponent({
           {
             name: '本館3F門診櫃台',
             type: 'pie',
-            radius: '80%',
+            radius: '75%',
             center: ['50%', '60%'],
             data: [
               { value: props.score4[0], name: '1' },
@@ -248,7 +248,7 @@ export default defineComponent({
           {
             name: '一分館1F門診櫃台',
             type: 'pie',
-            radius: '80%',
+            radius: '75%',
             center: ['50%', '60%'],
             data: [
               { value: props.score5[0], name: '1' },

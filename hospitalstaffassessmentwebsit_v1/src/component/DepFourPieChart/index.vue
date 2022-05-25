@@ -1,9 +1,9 @@
 <template>
-  <div class="total-pie">
+  <div class="total-pie-four">
     <h2 class="total-pie-text">本館1F藥劑科</h2>
     <v-chart class="piechart1" :option="option1"></v-chart>
   </div>
-  <div class="total-pie">
+  <div class="total-pie-four">
     <h2 class="total-pie-text">一分館B1眼科藥局</h2>
     <v-chart class="piechart2" :option="option2"></v-chart>
   </div>
@@ -52,7 +52,7 @@ export default defineComponent({
           {
             name: '本館1F藥劑科',
             type: 'pie',
-            radius: '80%',
+            radius: '75%',
             center: ['50%', '60%'],
             data: [
               { value: props.score1[0], name: '1' },
@@ -97,7 +97,7 @@ export default defineComponent({
           {
             name: '一分館B1眼科藥局',
             type: 'pie',
-            radius: '80%',
+            radius: '75%',
             center: ['50%', '60%'],
             data: [
               { value: props.score2[0], name: '1' },
@@ -144,29 +144,4 @@ export default defineComponent({
   },
 })
 </script>
-<style>
-.total-pie {
-  height: 450px;
-  width: 500px;
-  display: flex;
-  justify-content: center;
-  position: relative;
-}
-
-x-vue-echarts.echarts.piechart1,
-x-vue-echarts.echarts.piechart2,
-x-vue-echarts.echarts.piechart3,
-x-vue-echarts.echarts.piechart4 {
-  width: 400px;
-  height: 400px;
-  display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* margin: auto 60px; */
-  margin-top: 50px;
-}
-.total-pie-text {
-  position: absolute;
-  top: 15%;
-}
-</style>
+<style src="./style.css"></style>

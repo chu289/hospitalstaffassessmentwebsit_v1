@@ -1,24 +1,26 @@
-.total-pie{
-    height: 450px;
-    width: 500px;
+.total-pie-four{
+    /* height: 450px;
+    width: 500px; */
     display: flex;
     justify-content: center;
     position: relative;
 }
 
-x-vue-echarts.echarts.piechart1,
-x-vue-echarts.echarts.piechart2,
-x-vue-echarts.echarts.piechart3,
-x-vue-echarts.echarts.piechart4{
-    width: 400px;
-    height: 400px;
+.total-pie-four x-vue-echarts.echarts.piechart1,
+.total-pie-four x-vue-echarts.echarts.piechart2,
+.total-pie-four x-vue-echarts.echarts.piechart3,
+.total-pie-four x-vue-echarts.echarts.piechart4{
+    /* width: 400px;
+    height: 400px; */
+    width: 500px;
+    height: 500px;
     display: flex;
     /* justify-content: center; */
     /* align-items: center; */
     /* margin: auto 60px; */
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
-.total-pie-text{
+.total-pie-four .total-pie-text{
     position: absolute;
-    top: 15%;
+    top: 10%;
 }
