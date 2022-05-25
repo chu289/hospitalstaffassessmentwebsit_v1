@@ -531,6 +531,7 @@ export default {
           .then((res) => {
             if (dateFlag == 0) {
               const scoreTimes = res.data
+              console.log(scoreTimes.A.score);
               score1.value = scoreTimes.A.score
               score2.value = scoreTimes.B.score
               score3.value = scoreTimes.C.score
@@ -539,11 +540,13 @@ export default {
               console.log(hostipalSearchResult.value)
               console.log('全院查詢')
             } else if (dateFlag == 2) {
-              const scoreTimes = res.data
-              score1.value = scoreTimes.A.score
-              score2.value = scoreTimes.B.score
-              score3.value = scoreTimes.C.score
-              score4.value = scoreTimes.D.score
+
+              // const scoreTimes = res.data
+              //               console.log(scoreTimes.A.score);
+              // score1.value = scoreTimes.A.score
+              // score2.value = scoreTimes.B.score
+              // score3.value = scoreTimes.C.score
+              // score4.value = scoreTimes.D.score
               hostipalSearchResult2.value = res.data
               console.log(hostipalSearchResult2.value)
               console.log('全院查詢2')

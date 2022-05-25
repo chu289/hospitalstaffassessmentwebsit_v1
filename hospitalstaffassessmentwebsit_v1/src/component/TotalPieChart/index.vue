@@ -28,7 +28,7 @@ import {
   LegendComponent,
 } from 'echarts/components'
 import VChart, { THEME_KEY } from 'vue-echarts'
-import { ref, defineComponent } from 'vue'
+import { ref, watch, defineComponent } from 'vue'
 
 echarts.use([
   CanvasRenderer,
@@ -48,8 +48,14 @@ export default defineComponent({
   },
   props: ['score1', 'score2', 'score3', 'score4'],
   setup(props) {
-    const option1 = ref({
-      tooltip: {
+    const option1 = ref({})
+    const option2 = ref({})
+    const option3 = ref({})
+    const option4 = ref({})
+
+    function reAssign() {
+      option1.value = {
+        tooltip: {
         trigger: 'item',
         formatter: '{a} <br/>{b}分 : {c}次 ({d}%)',
       },
@@ -96,10 +102,10 @@ export default defineComponent({
           },
         },
       ],
-    })
+      }
 
-    const option2 = ref({
-      tooltip: {
+      option2.value = {
+        tooltip: {
         trigger: 'item',
         formatter: '{a} <br/>{b}分 : {c}次 ({d}%)',
       },
@@ -147,9 +153,10 @@ export default defineComponent({
           },
         },
       ],
-    })
-    const option3 = ref({
-      tooltip: {
+      }
+
+      option3.value = {
+        tooltip: {
         trigger: 'item',
         formatter: '{a} <br/>{b}分 : {c}次 ({d}%)',
       },
@@ -197,9 +204,10 @@ export default defineComponent({
           },
         },
       ],
-    })
-    const option4 = ref({
-      tooltip: {
+      }
+
+      option4.value = {
+        tooltip: {
         trigger: 'item',
         formatter: '{a} <br/>{b}分 : {c}次 ({d}%)',
       },
@@ -247,7 +255,15 @@ export default defineComponent({
           },
         },
       ],
-    })
+      }
+    }
+
+        reAssign()
+
+    watch(props, () => {
+      reAssign();
+    });
+
 
     return {option1, option2, option3, option4 }
   },
