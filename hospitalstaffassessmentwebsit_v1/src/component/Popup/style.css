@@ -1,4 +1,4 @@
-.dialog-overlay{
+.dialog-overlay {
     height: 100vh;
     width: 100vw;
     z-index: 98;
@@ -6,9 +6,11 @@
     position: absolute;
     margin: auto;
 }
-.confirm{
+
+.confirm {
     padding-top: 20px;
 }
-.cancel{
+
+.cancel {
     padding-top: 20px;
 }
